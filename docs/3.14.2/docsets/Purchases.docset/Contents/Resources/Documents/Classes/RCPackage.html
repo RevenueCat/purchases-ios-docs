@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RCPackage Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/RCPackage" class="dashAnchor"></a>
+    <a title="RCPackage Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Purchases 3.14.1 Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/revenuecat/purchases-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Purchases Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RCPackage Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfo.html">RCEntitlementInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfos.html">RCEntitlementInfos</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCIntroEligibility.html">RCIntroEligibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOffering.html">RCOffering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOfferings.html">RCOfferings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPackage.html">RCPackage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchases.html">RCPurchases</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchasesErrorUtils.html">RCPurchasesErrorUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)RCPurchasesErrors">RCPurchasesErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCTransaction.html">RCTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionNumber">PurchasesVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionString">PurchasesVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCBackendErrorDomain">RCBackendErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCFinishableKey">RCFinishableKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCPurchasesErrorDomain">RCPurchasesErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCReadableErrorCodeKey">RCReadableErrorCodeKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCBackendErrorCode.html">RCBackendErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCIntroEligibilityStatus.html">RCIntroEligibilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCLogLevel.html">RCLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPackageType.html">RCPackageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPeriodType.html">RCPeriodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchaseOwnershipType.html">RCPurchaseOwnershipType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchasesErrorCode.html">RCPurchasesErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCStore.html">RCStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RCPurchasesDelegate.html">RCPurchasesDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCDeferredPromotionalPurchaseBlock">RCDeferredPromotionalPurchaseBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPaymentDiscountBlock">RCPaymentDiscountBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveIntroEligibilityBlock">RCReceiveIntroEligibilityBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveOfferingsBlock">RCReceiveOfferingsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveProductsBlock">RCReceiveProductsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RCPackage</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">RCPackage</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Contains information about the product available for the user to purchase. For more info see <a href="https://docs.revenuecat.com/docs/entitlements">https://docs.revenuecat.com/docs/entitlements</a></p>
+
+              <div class="slightly-smaller">
+                <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPackage.h#L43-L70">Show on GitHub</a>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPackage(py)identifier"></a>
+                    <a name="//apple_ref/objc/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPackage(py)identifier">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique identifier for this package. Can be one a predefined package type or a custom one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">identifier</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPackage.h#L48">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPackage(py)packageType"></a>
+                    <a name="//apple_ref/objc/Property/packageType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPackage(py)packageType">packageType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Package type for the product. Will be one of <code><a href="../Enums/RCPackageType.html">RCPackageType</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/RCPackageType.html">RCPackageType</a></span> <span class="n">packageType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPackage.h#L53">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPackage(py)product"></a>
+                    <a name="//apple_ref/objc/Property/product" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPackage(py)product">product</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>SKProduct</code> assigned to this package. <a href="https://developer.apple.com/documentation/storekit/skproduct">https://developer.apple.com/documentation/storekit/skproduct</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">SKProduct</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">product</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPackage.h#L58">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPackage(py)localizedPriceString"></a>
+                    <a name="//apple_ref/objc/Property/localizedPriceString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPackage(py)localizedPriceString">localizedPriceString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A String containing the localized price</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">localizedPriceString</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPackage.h#L63">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPackage(py)localizedIntroductoryPriceString"></a>
+                    <a name="//apple_ref/objc/Property/localizedIntroductoryPriceString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPackage(py)localizedIntroductoryPriceString">localizedIntroductoryPriceString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A String containing the localized introductory price</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">localizedIntroductoryPriceString</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPackage.h#L68">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://revenuecat.com" target="_blank" rel="external">RevenueCat</a>. All rights reserved. (Last updated: 2022-02-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

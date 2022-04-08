@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RCPurchasesDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/RCPurchasesDelegate" class="dashAnchor"></a>
+    <a title="RCPurchasesDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Purchases 3.14.1 Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/revenuecat/purchases-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Purchases Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RCPurchasesDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfo.html">RCEntitlementInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfos.html">RCEntitlementInfos</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCIntroEligibility.html">RCIntroEligibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOffering.html">RCOffering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOfferings.html">RCOfferings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPackage.html">RCPackage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchases.html">RCPurchases</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchasesErrorUtils.html">RCPurchasesErrorUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)RCPurchasesErrors">RCPurchasesErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCTransaction.html">RCTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionNumber">PurchasesVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionString">PurchasesVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCBackendErrorDomain">RCBackendErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCFinishableKey">RCFinishableKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCPurchasesErrorDomain">RCPurchasesErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCReadableErrorCodeKey">RCReadableErrorCodeKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCBackendErrorCode.html">RCBackendErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCIntroEligibilityStatus.html">RCIntroEligibilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCLogLevel.html">RCLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPackageType.html">RCPackageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPeriodType.html">RCPeriodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchaseOwnershipType.html">RCPurchaseOwnershipType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchasesErrorCode.html">RCPurchasesErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCStore.html">RCStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RCPurchasesDelegate.html">RCPurchasesDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCDeferredPromotionalPurchaseBlock">RCDeferredPromotionalPurchaseBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPaymentDiscountBlock">RCPaymentDiscountBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveIntroEligibilityBlock">RCReceiveIntroEligibilityBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveOfferingsBlock">RCReceiveOfferingsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveProductsBlock">RCReceiveProductsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RCPurchasesDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">RCPurchasesDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Delegate for <code><a href="../Classes/RCPurchases.html">RCPurchases</a></code> responsible for handling updating your app&rsquo;s state in response to updated purchaser info or promotional product purchases.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Delegate methods can be called at any time after the <code>delegate</code> is set, not just in response to <code>purchaserInfo:</code> calls. Ensure your app is capable of handling these calls at anytime if <code>delegate</code> is set.
+
+</div>
+
+              <div class="slightly-smaller">
+                <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L628-L648">Show on GitHub</a>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)RCPurchasesDelegate(im)purchases:didReceiveUpdatedPurchaserInfo:"></a>
+                    <a name="//apple_ref/objc/Method/-purchases:didReceiveUpdatedPurchaserInfo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)RCPurchasesDelegate(im)purchases:didReceiveUpdatedPurchaserInfo:">-purchases:<wbr>didReceiveUpdatedPurchaserInfo:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called whenever <code><a href="../Classes/RCPurchases.html">RCPurchases</a></code> receives updated purchaser info. This may happen periodically
+throughout the life of the app if new information becomes available (e.g. UIApplicationDidBecomeActive).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">purchases</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/RCPurchases.html">RCPurchases</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">purchases</span>
+    <span class="nf">didReceiveUpdatedPurchaserInfo</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">purchaserInfo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>purchases</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Related <code><a href="../Classes/RCPurchases.html">RCPurchases</a></code> object</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>purchaserInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Updated <code><a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L638-L639">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)RCPurchasesDelegate(im)purchases:shouldPurchasePromoProduct:defermentBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-purchases:shouldPurchasePromoProduct:defermentBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)RCPurchasesDelegate(im)purchases:shouldPurchasePromoProduct:defermentBlock:">-purchases:<wbr>shouldPurchasePromoProduct:<wbr>defermentBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a user initiates a promotional in-app purchase from the App Store. If your app is able to handle a purchase at the current time, run the deferment block in this method. If the app is not in a state to make a purchase: cache the defermentBlock, then call the defermentBlock when the app is ready to make the promotional purchase. If the purchase should never be made, you don&rsquo;t need to ever call the defermentBlock and <code><a href="../Classes/RCPurchases.html">RCPurchases</a></code> will not proceed with promotional purchases.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">purchases</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/RCPurchases.html">RCPurchases</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">purchases</span>
+    <span class="nf">shouldPurchasePromoProduct</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SKProduct</span> <span class="o">*</span><span class="p">)</span><span class="nv">product</span>
+                <span class="nf">defermentBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCDeferredPromotionalPurchaseBlock">RCDeferredPromotionalPurchaseBlock</a></span><span class="p">)</span>
+                                   <span class="n">makeDeferredPurchase</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>product</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>SKProduct</code> the product that was selected from the app store</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L646">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://revenuecat.com" target="_blank" rel="external">RevenueCat</a>. All rights reserved. (Last updated: 2022-02-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

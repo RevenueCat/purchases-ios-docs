@@ -1,0 +1,3237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RCPurchases Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/RCPurchases" class="dashAnchor"></a>
+    <a title="RCPurchases Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Purchases 3.14.1 Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/revenuecat/purchases-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Purchases Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RCPurchases Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfo.html">RCEntitlementInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfos.html">RCEntitlementInfos</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCIntroEligibility.html">RCIntroEligibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOffering.html">RCOffering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOfferings.html">RCOfferings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPackage.html">RCPackage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchases.html">RCPurchases</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchasesErrorUtils.html">RCPurchasesErrorUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)RCPurchasesErrors">RCPurchasesErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCTransaction.html">RCTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionNumber">PurchasesVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionString">PurchasesVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCBackendErrorDomain">RCBackendErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCFinishableKey">RCFinishableKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCPurchasesErrorDomain">RCPurchasesErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCReadableErrorCodeKey">RCReadableErrorCodeKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCBackendErrorCode.html">RCBackendErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCIntroEligibilityStatus.html">RCIntroEligibilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCLogLevel.html">RCLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPackageType.html">RCPackageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPeriodType.html">RCPeriodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchaseOwnershipType.html">RCPurchaseOwnershipType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchasesErrorCode.html">RCPurchasesErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCStore.html">RCStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RCPurchasesDelegate.html">RCPurchasesDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCDeferredPromotionalPurchaseBlock">RCDeferredPromotionalPurchaseBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPaymentDiscountBlock">RCPaymentDiscountBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveIntroEligibilityBlock">RCReceiveIntroEligibilityBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveOfferingsBlock">RCReceiveOfferingsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveProductsBlock">RCReceiveProductsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RCPurchases</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">RCPurchases</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>RCPurchases</code> is the entry point for Purchases.framework. It should be instantiated as soon as your app has a unique user id for your user. This can be when a user logs in if you have accounts or on launch if you can generate a random user identifier.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Only one instance of RCPurchases should be instantiated at a time! Use a configure method to let the framework handle the singleton instance for you.
+
+</div>
+
+              <div class="slightly-smaller">
+                <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L61-L620">Show on GitHub</a>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cpy)automaticAppleSearchAdsAttributionCollection"></a>
+                    <a name="//apple_ref/objc/Property/automaticAppleSearchAdsAttributionCollection" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cpy)automaticAppleSearchAdsAttributionCollection">automaticAppleSearchAdsAttributionCollection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enable automatic collection of Apple Search Ads attribution. Disabled by default</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">automaticAppleSearchAdsAttributionCollection</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L66">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cpy)debugLogsEnabled"></a>
+                    <a name="//apple_ref/objc/Property/debugLogsEnabled" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)RCPurchases(cpy)debugLogsEnabled">debugLogsEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>use logLevel instead</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Enable debug logging. Useful for debugging issues with the lovely team @RevenueCat</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">debugLogsEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L71">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)setLogHandler:"></a>
+                    <a name="//apple_ref/objc/Method/+setLogHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cm)setLogHandler:">+setLogHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set a custom log handler for redirecting logs to your own logging system.</p>
+
+<p>By default, this sends Info, Warn, and Error messages. If you wish to receive Debug level messages, you must enable debug logs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLogHandler</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Enums/RCLogLevel.html">RCLogLevel</a></span><span class="p">,</span>
+                                        <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">logHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L78">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cpy)logLevel"></a>
+                    <a name="//apple_ref/objc/Property/logLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cpy)logLevel">logLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Used to set the log level. Useful for debugging issues with the lovely team @RevenueCat</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/RCLogLevel.html">RCLogLevel</a></span> <span class="n">logLevel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L83">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cpy)proxyURL"></a>
+                    <a name="//apple_ref/objc/Property/proxyURL" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cpy)proxyURL">proxyURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set this property to your proxy URL before configuring Purchases <em>only</em> if you&rsquo;ve received a proxy key value from your RevenueCat contact.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">proxyURL</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L88">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cpy)forceUniversalAppStore"></a>
+                    <a name="//apple_ref/objc/Property/forceUniversalAppStore" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cpy)forceUniversalAppStore">forceUniversalAppStore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set this property to true <em>only</em> if you&rsquo;re transitioning an existing Mac app from the Legacy Mac App Store
+into the Universal Store, and you&rsquo;ve configured your RevenueCat app accordingly. Contact support before using this.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">forceUniversalAppStore</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L94">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cpy)simulatesAskToBuyInSandbox"></a>
+                    <a name="//apple_ref/objc/Property/simulatesAskToBuyInSandbox" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cpy)simulatesAskToBuyInSandbox">simulatesAskToBuyInSandbox</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set this property to true <em>only</em> when testing the ask-to-buy / SCA purchases flow. More information:
+<a href="http://errors.rev.cat/ask-to-buy">http://errors.rev.cat/ask-to-buy</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">simulatesAskToBuyInSandbox</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L100">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)configureWithAPIKey:"></a>
+                    <a name="//apple_ref/objc/Method/+configureWithAPIKey:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cm)configureWithAPIKey:">+configureWithAPIKey:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures an instance of the Purchases SDK with a specified API key. The instance will be set as a singleton. You should access the singleton instance using [RCPurchases sharedPurchases]</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Use this initializer if your app does not have an account system. <code>RCPurchases</code> will generate a unique identifier for the current device and persist it to <code>NSUserDefaults</code>. This also affects the behavior of <code>restoreTransactionsForAppStoreAccount</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">configureWithAPIKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">APIKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>APIKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The API Key generated for your app from <a href="https://app.revenuecat.com/">https://app.revenuecat.com/</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instantiated <code>RCPurchases</code> object that has been set as a singleton.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L111">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)configureWithAPIKey:appUserID:"></a>
+                    <a name="//apple_ref/objc/Method/+configureWithAPIKey:appUserID:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cm)configureWithAPIKey:appUserID:">+configureWithAPIKey:<wbr>appUserID:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures an instance of the Purchases SDK with a specified API key and app user ID. The instance will be set as a singleton. You should access the singleton instance using [RCPurchases sharedPurchases]</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Best practice is to use a salted hash of your unique app user ids.</p>
+
+</div><div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>Use this initializer if you have your own user identifiers that you manage.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">configureWithAPIKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">APIKey</span>
+                                  <span class="nf">appUserID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appUserID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>APIKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The API Key generated for your app from <a href="https://app.revenuecat.com/">https://app.revenuecat.com/</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appUserID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique app user id for this user. This user id will allow users to share their purchases and subscriptions across devices. Pass nil if you want <code>RCPurchases</code> to generate this for you.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instantiated <code>RCPurchases</code> object that has been set as a singleton.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L126">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)configureWithAPIKey:appUserID:observerMode:"></a>
+                    <a name="//apple_ref/objc/Method/+configureWithAPIKey:appUserID:observerMode:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cm)configureWithAPIKey:appUserID:observerMode:">+configureWithAPIKey:<wbr>appUserID:<wbr>observerMode:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures an instance of the Purchases SDK with a custom userDefaults. Use this constructor if you want to sync status across a shared container, such as between a host app and an extension. The instance of the Purchases SDK will be set as a singleton. You should access the singleton instance using [RCPurchases sharedPurchases]</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">configureWithAPIKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">APIKey</span>
+                                  <span class="nf">appUserID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appUserID</span>
+                               <span class="nf">observerMode</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">observerMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>APIKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The API Key generated for your app from <a href="https://app.revenuecat.com/">https://app.revenuecat.com/</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appUserID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique app user id for this user. This user id will allow users to share their purchases and subscriptions across devices. Pass nil if you want <code>RCPurchases</code> to generate this for you.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>observerMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set this to TRUE if you have your own IAP implementation and want to use only RevenueCat&rsquo;s backend. Default is FALSE.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instantiated <code>RCPurchases</code> object that has been set as a singleton.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L139-L141">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)configureWithAPIKey:appUserID:observerMode:userDefaults:"></a>
+                    <a name="//apple_ref/objc/Method/+configureWithAPIKey:appUserID:observerMode:userDefaults:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cm)configureWithAPIKey:appUserID:observerMode:userDefaults:">+configureWithAPIKey:<wbr>appUserID:<wbr>observerMode:<wbr>userDefaults:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures an instance of the Purchases SDK with a custom userDefaults. Use this constructor if you want to sync status across a shared container, such as between a host app and an extension. The instance of the Purchases SDK will be set as a singleton. You should access the singleton instance using [RCPurchases sharedPurchases]</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">configureWithAPIKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">APIKey</span>
+                                  <span class="nf">appUserID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appUserID</span>
+                               <span class="nf">observerMode</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">observerMode</span>
+                               <span class="nf">userDefaults</span><span class="p">:</span>
+                                   <span class="p">(</span><span class="n">nullable</span> <span class="n">NSUserDefaults</span> <span class="o">*</span><span class="p">)</span><span class="nv">userDefaults</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>APIKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The API Key generated for your app from <a href="https://app.revenuecat.com/">https://app.revenuecat.com/</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appUserID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique app user id for this user. This user id will allow users to share their purchases and subscriptions across devices. Pass nil if you want <code>RCPurchases</code> to generate this for you.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>observerMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set this to TRUE if you have your own IAP implementation and want to use only RevenueCat&rsquo;s backend. Default is FALSE.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userDefaults</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Custom userDefaults to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instantiated <code>RCPurchases</code> object that has been set as a singleton.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L156-L159">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)configureWithAPIKey:appUserID:observerMode:userDefaults:dangerousSettings:"></a>
+                    <a name="//apple_ref/objc/Method/+configureWithAPIKey:appUserID:observerMode:userDefaults:dangerousSettings:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cm)configureWithAPIKey:appUserID:observerMode:userDefaults:dangerousSettings:">+configureWithAPIKey:<wbr>appUserID:<wbr>observerMode:<wbr>userDefaults:<wbr>dangerousSettings:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures an instance of the Purchases SDK with a custom userDefaults. Use this constructor if you want to sync status across a shared container, such as between a host app and an extension. The instance of the Purchases SDK will be set as a singleton. You should access the singleton instance using [RCPurchases sharedPurchases]</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span>
+    <span class="nf">configureWithAPIKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">APIKey</span>
+              <span class="nf">appUserID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appUserID</span>
+           <span class="nf">observerMode</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">observerMode</span>
+           <span class="nf">userDefaults</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSUserDefaults</span> <span class="o">*</span><span class="p">)</span><span class="nv">userDefaults</span>
+      <span class="nf">dangerousSettings</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">RCDangerousSettings</span> <span class="o">*</span><span class="p">)</span><span class="nv">dangerousSettings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>APIKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The API Key generated for your app from <a href="https://app.revenuecat.com/">https://app.revenuecat.com/</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appUserID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique app user id for this user. This user id will allow users to share their purchases and subscriptions across devices. Pass nil if you want <code>RCPurchases</code> to generate this for you.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>observerMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set this to TRUE if you have your own IAP implementation and want to use only RevenueCat&rsquo;s backend. Default is FALSE.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userDefaults</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Custom userDefaults to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dangerousSettings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Only use a Dangerous Setting if suggested by RevenueCat support team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instantiated <code>RCPurchases</code> object that has been set as a singleton.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L176-L180">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)canMakePayments"></a>
+                    <a name="//apple_ref/objc/Method/+canMakePayments" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cm)canMakePayments">+canMakePayments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether the user is allowed to make payments.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">canMakePayments</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L185">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cpy)sharedPurchases"></a>
+                    <a name="//apple_ref/objc/Property/sharedPurchases" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cpy)sharedPurchases">sharedPurchases</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">RCPurchases</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">sharedPurchases</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A singleton <code>RCPurchases</code> object. Call this after a configure method to access the singleton.
+@note: If the SDK has not been configured, calls to sharedPurchases will raise an exception. Make sure to configure the SDK before making calls to sharedPurchases.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L191">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configuration"></a>
+                <a name="//apple_ref/objc/Section/Configuration" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><p>Configuration</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cpy)isConfigured"></a>
+                    <a name="//apple_ref/objc/Property/isConfigured" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cpy)isConfigured">isConfigured</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    True if the SDK has been configured, false otherwise. This property should only be used in special circumstances. If the shared instance has not been configured,
+calls made to it will raise an exception.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">class</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isConfigured</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L199">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(py)allowSharingAppStoreAccount"></a>
+                    <a name="//apple_ref/objc/Property/allowSharingAppStoreAccount" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)RCPurchases(py)allowSharingAppStoreAccount">allowSharingAppStoreAccount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Configure behavior through the RevenueCat dashboard instead.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Set this to true if you are passing in an appUserID but it is anonymous, this is true by default if you didn&rsquo;t pass an appUserID
+ If a user tries to purchase a product that is active on the current app store account, we will treat it as a restore and alias
+ the new ID with the previous id.
+ See <a href="https://docs.revenuecat.com/docs/user-ids">https://docs.revenuecat.com/docs/user-ids</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">allowSharingAppStoreAccount</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L206">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(py)finishTransactions"></a>
+                    <a name="//apple_ref/objc/Property/finishTransactions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(py)finishTransactions">finishTransactions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default to YES, set this to NO if you are finishing transactions with your own StoreKit queue listener</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">finishTransactions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L210">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)frameworkVersion"></a>
+                    <a name="//apple_ref/objc/Method/+frameworkVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(cm)frameworkVersion">+frameworkVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This version of the Purchases framework</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">frameworkVersion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L213">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate for <code>RCPurchases</code> instance. The delegate is responsible for handling promotional product purchases and changes to purchaser information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/RCPurchasesDelegate.html">RCPurchasesDelegate</a></span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L216">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Identity"></a>
+                <a name="//apple_ref/objc/Section/Identity" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Identity"></a>
+                  <h3 class="section-name"><p>Identity</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(py)appUserID"></a>
+                    <a name="//apple_ref/objc/Property/appUserID" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>appUserID</code> used by <code>RCPurchases</code>. If not passed on initialization this will be generated and cached by <code>RCPurchases</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">appUserID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L221">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(py)isAnonymous"></a>
+                    <a name="//apple_ref/objc/Property/isAnonymous" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(py)isAnonymous">isAnonymous</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code> has been generated by RevenueCat</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isAnonymous</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L224">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)createAlias:completionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-createAlias:completionBlock:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)RCPurchases(im)createAlias:completionBlock:">-createAlias:<wbr>completionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use logIn instead.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>This function will alias two appUserIDs together.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">createAlias</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">alias</span>
+    <span class="nf">completionBlock</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alias</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new appUserID that should be linked to the currently identified appUserID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional completion block called when the aliasing has been successful. This completion block will receive an error if there&rsquo;s been one.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L231-L232">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)identify:completionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-identify:completionBlock:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)RCPurchases(im)identify:completionBlock:">-identify:<wbr>completionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use logIn instead.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>This function will identify the current user with an appUserID. Typically this would be used after a logout to identify a new user without calling configure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">identify</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appUserID</span>
+    <span class="nf">completionBlock</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appUserID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The appUserID that should be linked to the current user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L238-L239">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)resetWithCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-resetWithCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)RCPurchases(im)resetWithCompletionBlock:">-resetWithCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use logOut instead.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Resets the Purchases client clearing the saved appUserID. This will generate a random user id and save it in the cache.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">resetWithCompletionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L244-L245">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)logIn:completionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-logIn:completionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)logIn:completionBlock:">-logIn:<wbr>completionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This function will logIn the current user with an appUserID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">logIn</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appUserID</span>
+    <span class="nf">completionBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n"><a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">,</span> <span class="n">BOOL</span><span class="p">,</span>
+                                      <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="n">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appUserID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The appUserID that should be linked to the current user.
+The callback will be called with the latest PurchaserInfo for the user, as well as a boolean indicating whether the user was created for the first
+time in the RevenueCat backend.
+See <a href="https://docs.revenuecat.com/docs/user-ids">https://docs.revenuecat.com/docs/user-ids</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L254-L256">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)logOutWithCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-logOutWithCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)logOutWithCompletionBlock:">-logOutWithCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs out the Purchases client clearing the saved appUserID. This will generate a random user id and save it in the cache.
+If this method is called and the current user is anonymous, it will return an error.
+See <a href="https://docs.revenuecat.com/docs/user-ids">https://docs.revenuecat.com/docs/user-ids</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">logOutWithCompletionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L263-L264">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Attribution"></a>
+                <a name="//apple_ref/objc/Section/Attribution" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Attribution"></a>
+                  <h3 class="section-name"><p>Attribution</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)addAttributionData:fromNetwork:"></a>
+                    <a name="//apple_ref/objc/Method/+addAttributionData:fromNetwork:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)RCPurchases(cm)addAttributionData:fromNetwork:">+addAttributionData:<wbr>fromNetwork:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use the set<NetworkId> functions instead.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Send your attribution data to RevenueCat so you can track the revenue generated by your different campaigns.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addAttributionData</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span>
+               <span class="nf">fromNetwork</span><span class="p">:(</span><span class="n"><a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a></span><span class="p">)</span><span class="nv">network</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary provided by the network. See <a href="https://docs.revenuecat.com/docs/attribution">https://docs.revenuecat.com/docs/attribution</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>network</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Enum for the network the data is coming from, see <code><a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a></code> for supported networks</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L274-L275">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(cm)addAttributionData:fromNetwork:forNetworkUserId:"></a>
+                    <a name="//apple_ref/objc/Method/+addAttributionData:fromNetwork:forNetworkUserId:" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)RCPurchases(cm)addAttributionData:fromNetwork:forNetworkUserId:">+addAttributionData:<wbr>fromNetwork:<wbr>forNetworkUserId:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use the set<NetworkId> functions instead.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Send your attribution data to RevenueCat so you can track the revenue generated by your different campaigns.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addAttributionData</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span>
+               <span class="nf">fromNetwork</span><span class="p">:(</span><span class="n"><a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a></span><span class="p">)</span><span class="nv">network</span>
+          <span class="nf">forNetworkUserId</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">networkUserId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary provided by the network. See <a href="https://docs.revenuecat.com/docs/attribution">https://docs.revenuecat.com/docs/attribution</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>network</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Enum for the network the data is coming from, see <code><a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a></code> for supported networks</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>networkUserId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User Id that should be sent to the network. Default is the current App User Id</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L284-L287">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Purchases"></a>
+                <a name="//apple_ref/objc/Section/Purchases" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Purchases"></a>
+                  <h3 class="section-name"><p>Purchases</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)purchaserInfoWithCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-purchaserInfoWithCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)purchaserInfoWithCompletionBlock:">-purchaserInfoWithCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get latest available purchaser info.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">purchaserInfoWithCompletionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block called when purchaser info is available and not stale. Called immediately if purchaser info is cached. Purchaser info can be nil if an error occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L296-L297">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)offeringsWithCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-offeringsWithCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)offeringsWithCompletionBlock:">-offeringsWithCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch the configured offerings for this users. Offerings allows you to configure your in-app products via RevenueCat and greatly simplifies management. See the guide (<a href="https://docs.revenuecat.com/entitlements">https://docs.revenuecat.com/entitlements</a>) for more info.</p>
+
+<p>Offerings will be fetched and cached on instantiation so that, by the time they are needed, your prices are loaded for your purchase flow. Time is money.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">offeringsWithCompletionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveOfferingsBlock">RCReceiveOfferingsBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block called when offerings are available. Called immediately if offerings are cached. Offerings will be nil if an error occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L306">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)productsWithIdentifiers:completionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-productsWithIdentifiers:completionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)productsWithIdentifiers:completionBlock:">-productsWithIdentifiers:<wbr>completionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the <code>SKProducts</code> for your IAPs for given <code>productIdentifiers</code>. Use this method if you aren&rsquo;t using <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(im)offeringsWithCompletionBlock:">-offeringsWithCompletionBlock:</a></code>.
+You should use offerings though.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p><code>completion</code> may be called without <code>SKProduct</code>s that you are expecting. This is usually caused by iTunesConnect configuration errors. Ensure your IAPs have the &ldquo;Ready to Submit&rdquo; status in iTunesConnect. Also ensure that you have an active developer program subscription and you have signed the latest paid application agreements. If you&rsquo;re having trouble see: <a href="https://www.revenuecat.com/2018/10/11/configuring-in-app-products-is-hard">https://www.revenuecat.com/2018/10/11/configuring-in-app-products-is-hard</a></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">productsWithIdentifiers</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">productIdentifiers</span>
+                <span class="nf">completionBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveProductsBlock">RCReceiveProductsBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>productIdentifiers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A set of product identifiers for in app purchases setup via iTunesConnect. This should be either hard coded in your application, from a file, or from a custom endpoint if you want to be able to deploy new IAPs without an app update.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An @escaping callback that is called with the loaded products. If the fetch fails for any reason it will return an empty array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L317-L319">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)purchaseProduct:withCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-purchaseProduct:withCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)purchaseProduct:withCompletionBlock:">-purchaseProduct:<wbr>withCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use this function if you are not using the Offerings system to purchase an <code>SKProduct</code>. If you are using the Offerings system, use <code>-[RCPurchases purchasePackage:withCompletionBlock]</code> instead.</p>
+
+<p>Call this method when a user has decided to purchase a product. Only call this in direct response to user input.</p>
+
+<p>From here <code>Purchases</code> will handle the purchase with <code>StoreKit</code> and call the <code><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>You do not need to finish the transaction yourself in the completion callback, Purchases will handle this for you.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">purchaseProduct</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SKProduct</span> <span class="o">*</span><span class="p">)</span><span class="nv">product</span>
+    <span class="nf">withCompletionBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>product</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>SKProduct</code> the user intends to purchase</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that is called when the purchase completes. If the purchase was successful there will be a <code>SKPaymentTransaction</code> and a <code><a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a></code>. If the purchase was not successful, there will be an <code>NSError</code>. If the user cancelled, <code>userCancelled</code> will be <code>YES</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L334-L335">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)purchasePackage:withCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-purchasePackage:withCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)purchasePackage:withCompletionBlock:">-purchasePackage:<wbr>withCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Purchase the passed <code><a href="../Classes/RCPackage.html">RCPackage</a></code>.</p>
+
+<p>Call this method when a user has decided to purchase a product. Only call this in direct response to user input.</p>
+
+<p>From here <code>Purchases</code> will handle the purchase with <code>StoreKit</code> and call the <code><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>You do not need to finish the transaction yourself in the completion callback, Purchases will handle this for you.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">purchasePackage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/RCPackage.html">RCPackage</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">package</span>
+    <span class="nf">withCompletionBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>package</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/RCPackage.html">RCPackage</a></code> the user intends to purchase</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that is called when the purchase completes. If the purchase was successful there will be a <code>SKPaymentTransaction</code> and a <code><a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a></code>. If the purchase was not successful, there will be an <code>NSError</code>. If the user cancelled, <code>userCancelled</code> will be <code>YES</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L350-L351">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)restoreTransactionsWithCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-restoreTransactionsWithCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)restoreTransactionsWithCompletionBlock:">-restoreTransactionsWithCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method will post all purchases associated with the current App Store account to RevenueCat and become associated with the current <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code>.
+If the receipt is being used by an existing user, the current <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code> will be aliased together with the <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code> of the existing user.
+Going forward, either <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code> will be able to reference the same user.</p>
+
+<p>You shouldn&rsquo;t use this method if you have your own account system. In that case &ldquo;restoration&rdquo; is provided by your app passing
+the same <code>appUserId</code> used to purchase originally.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This may force your users to enter the App Store password so should only be performed on request of the user.
+Typically with a button in settings or near your purchase UI. Use syncPurchasesWithCompletionBlock
+if you need to restore transactions programmatically.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">restoreTransactionsWithCompletionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L365-L366">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)syncPurchasesWithCompletionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-syncPurchasesWithCompletionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)syncPurchasesWithCompletionBlock:">-syncPurchasesWithCompletionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method will post all purchases associated with the current App Store account to RevenueCat and become associated with the current <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code>.
+If the receipt is being used by an existing user, the current <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code> will be aliased together with the <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code> of the existing user.
+Going forward, either <code><a href="../Classes/RCPurchases.html#/c:objc(cs)RCPurchases(py)appUserID">appUserID</a></code> will be able to reference the same user.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <p>This function should only be called if you&rsquo;re not calling any purchase method.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This method will not trigger a login prompt from App Store. However, if the receipt currently on the device does not contain subscriptions,
+but the user has made subscription purchases, this method won&rsquo;t be able to restore them. Use restoreTransactionsWithCompletionBlock to cover those cases.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">syncPurchasesWithCompletionBlock</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L378-L379">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)checkTrialOrIntroductoryPriceEligibility:completionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-checkTrialOrIntroductoryPriceEligibility:completionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)checkTrialOrIntroductoryPriceEligibility:completionBlock:">-checkTrialOrIntroductoryPriceEligibility:<wbr>completionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Computes whether or not a user is eligible for the introductory pricing period of a given product. You should use this method to determine whether or not you show the user the normal product price or the introductory price. This also applies to trials (trials are considered a type of introductory pricing).</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Subscription groups are automatically collected for determining eligibility. If RevenueCat can&rsquo;t definitively compute the eligibility, most likely because of missing group information, it will return <code>RCIntroEligibilityStatusUnknown</code>. The best course of action on unknown status is to display the non-intro pricing, to not create a misleading situation. To avoid this, make sure you are testing with the latest version of iOS so that the subscription group can be collected by the SDK.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">checkTrialOrIntroductoryPriceEligibility</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">productIdentifiers</span>
+                                 <span class="nf">completionBlock</span><span class="p">:</span>
+                                     <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveIntroEligibilityBlock">RCReceiveIntroEligibilityBlock</a></span><span class="p">)</span>
+                                         <span class="n">receiveEligibility</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>productIdentifiers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of product identifiers for which you want to compute eligibility</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>receiveEligibility</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block that receives a dictionary of product_id -&gt; <code><a href="../Classes/RCIntroEligibility.html">RCIntroEligibility</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L390-L391">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)paymentDiscountForProductDiscount:product:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-paymentDiscountForProductDiscount:product:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)paymentDiscountForProductDiscount:product:completion:">-paymentDiscountForProductDiscount:<wbr>product:<wbr>completion:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use this function to retrieve the <code>SKPaymentDiscount</code> for a given <code>SKProduct</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">paymentDiscountForProductDiscount</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SKProductDiscount</span> <span class="o">*</span><span class="p">)</span><span class="nv">discount</span>
+                                  <span class="nf">product</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SKProduct</span> <span class="o">*</span><span class="p">)</span><span class="nv">product</span>
+                               <span class="nf">completion</span><span class="p">:</span>
+                                   <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPaymentDiscountBlock">RCPaymentDiscountBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>discount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>SKProductDiscount</code> to apply to the product.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>product</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>SKProduct</code> the user intends to purchase.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that is called when the <code>SKPaymentDiscount</code> is returned. If it was not successful, there will be an <code>NSError</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L402-L404">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)purchaseProduct:withDiscount:completionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-purchaseProduct:withDiscount:completionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)purchaseProduct:withDiscount:completionBlock:">-purchaseProduct:<wbr>withDiscount:<wbr>completionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use this function if you are not using the Offerings system to purchase an <code>SKProduct</code> with an applied <code>SKPaymentDiscount</code>. If you are using the Offerings system, use <code>-[RCPurchases purchasePackage:withDiscount:withCompletionBlock]</code> instead.</p>
+
+<p>Call this method when a user has decided to purchase a product with an applied discount. Only call this in direct response to user input.</p>
+
+<p>From here <code>Purchases</code> will handle the purchase with <code>StoreKit</code> and call the <code><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>You do not need to finish the transaction yourself in the completion callback, Purchases will handle this for you.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">purchaseProduct</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SKProduct</span> <span class="o">*</span><span class="p">)</span><span class="nv">product</span>
+           <span class="nf">withDiscount</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SKPaymentDiscount</span> <span class="o">*</span><span class="p">)</span><span class="nv">discount</span>
+        <span class="nf">completionBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>product</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>SKProduct</code> the user intends to purchase</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>discount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>SKPaymentDiscount</code> to apply to the purchase</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that is called when the purchase completes. If the purchase was successful there will be a <code>SKPaymentTransaction</code> and a <code><a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a></code>. If the purchase was not successful, there will be an <code>NSError</code>. If the user cancelled, <code>userCancelled</code> will be <code>YES</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L422-L424">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)purchasePackage:withDiscount:completionBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-purchasePackage:withDiscount:completionBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)purchasePackage:withDiscount:completionBlock:">-purchasePackage:<wbr>withDiscount:<wbr>completionBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Purchase the passed <code><a href="../Classes/RCPackage.html">RCPackage</a></code>.</p>
+
+<p>Call this method when a user has decided to purchase a product with an applied discount. Only call this in direct response to user input.</p>
+
+<p>From here <code>Purchases</code> will handle the purchase with <code>StoreKit</code> and call the <code><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a></code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>You do not need to finish the transaction yourself in the completion callback, Purchases will handle this for you.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">purchasePackage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/RCPackage.html">RCPackage</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">package</span>
+           <span class="nf">withDiscount</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SKPaymentDiscount</span> <span class="o">*</span><span class="p">)</span><span class="nv">discount</span>
+        <span class="nf">completionBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>package</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/RCPackage.html">RCPackage</a></code> the user intends to purchase</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>discount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>SKPaymentDiscount</code> to apply to the purchase</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that is called when the purchase completes. If the purchase was successful there will be a <code>SKPaymentTransaction</code> and a <code><a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a></code>. If the purchase was not successful, there will be an <code>NSError</code>. If the user cancelled, <code>userCancelled</code> will be <code>YES</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L441-L443">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)invalidatePurchaserInfoCache"></a>
+                    <a name="//apple_ref/objc/Method/-invalidatePurchaserInfoCache" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)invalidatePurchaserInfoCache">-invalidatePurchaserInfoCache</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invalidates the cache for purchaser information.</p>
+
+<p>Most apps will not need to use this method; invalidating the cache can leave your app in an invalid state.
+Refer to <a href="https://docs.revenuecat.com/docs/purchaserinfo#section-get-user-information">https://docs.revenuecat.com/docs/purchaserinfo#section-get-user-information</a> for more information on
+using the cache properly.</p>
+
+<p>This is useful for cases where purchaser information might have been updated outside of the app, like if a
+promotional subscription is granted through the RevenueCat dashboard.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">invalidatePurchaserInfoCache</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L456">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)presentCodeRedemptionSheet"></a>
+                    <a name="//apple_ref/objc/Method/-presentCodeRedemptionSheet" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)presentCodeRedemptionSheet">-presentCodeRedemptionSheet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays a sheet that enables users to redeem subscription offer codes that you generated in App Store Connect.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">presentCodeRedemptionSheet</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L461">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Subscriber%20Attributes"></a>
+                <a name="//apple_ref/objc/Section/Subscriber Attributes" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Subscriber%20Attributes"></a>
+                  <h3 class="section-name"><p>Subscriber Attributes</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setAttributes:"></a>
+                    <a name="//apple_ref/objc/Method/-setAttributes:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setAttributes:">-setAttributes:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attributes are useful for storing additional, structured information on a user.
+Since attributes are writable using a public key they should not be used for
+managing secure or sensitive information such as subscription status, coins, etc.</p>
+
+<p>Key names starting with &ldquo;$&rdquo; are reserved names used by RevenueCat. For a full list of key
+restrictions refer to our guide: <a href="https://docs.revenuecat.com/docs/subscriber-attributes">https://docs.revenuecat.com/docs/subscriber-attributes</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAttributes</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">attributes</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>attributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Map of attributes by key. Set the value as an empty string to delete an attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L476">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setEmail:"></a>
+                    <a name="//apple_ref/objc/Method/-setEmail:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setEmail:">-setEmail:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the email address for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setEmail</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">email</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>email</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L483">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setPhoneNumber:"></a>
+                    <a name="//apple_ref/objc/Method/-setPhoneNumber:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setPhoneNumber:">-setPhoneNumber:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the phone number for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPhoneNumber</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">phoneNumber</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>phoneNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L490">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setDisplayName:"></a>
+                    <a name="//apple_ref/objc/Method/-setDisplayName:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setDisplayName:">-setDisplayName:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the display name for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDisplayName</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">displayName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>displayName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L497">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setPushToken:"></a>
+                    <a name="//apple_ref/objc/Method/-setPushToken:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setPushToken:">-setPushToken:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the push token for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPushToken</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">pushToken</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pushToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L504">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setAdjustID:"></a>
+                    <a name="//apple_ref/objc/Method/-setAdjustID:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setAdjustID:">-setAdjustID:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the Adjust Id for the user
+ Required for the RevenueCat Adjust integration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAdjustID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">adjustID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjustID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L512">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setAppsflyerID:"></a>
+                    <a name="//apple_ref/objc/Method/-setAppsflyerID:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setAppsflyerID:">-setAppsflyerID:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the Appsflyer Id for the user
+ Required for the RevenueCat Appsflyer integration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAppsflyerID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appsflyerID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appsflyerID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L520">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setFBAnonymousID:"></a>
+                    <a name="//apple_ref/objc/Method/-setFBAnonymousID:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setFBAnonymousID:">-setFBAnonymousID:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the Facebook SDK Anonymous Id for the user
+ Recommended for the RevenueCat Facebook integration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setFBAnonymousID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">fbAnonymousID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fbAnonymousID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L528">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setMparticleID:"></a>
+                    <a name="//apple_ref/objc/Method/-setMparticleID:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setMparticleID:">-setMparticleID:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the mParticle Id for the user
+ Recommended for the RevenueCat mParticle integration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setMparticleID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">mparticleID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mparticleID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L536">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setOnesignalID:"></a>
+                    <a name="//apple_ref/objc/Method/-setOnesignalID:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setOnesignalID:">-setOnesignalID:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the OneSignal Player ID for the user
+ Required for the RevenueCat OneSignal integration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setOnesignalID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">onesignalID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onesignalID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L544">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setAirshipChannelID:"></a>
+                    <a name="//apple_ref/objc/Method/-setAirshipChannelID:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setAirshipChannelID:">-setAirshipChannelID:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the Airship Channel ID for the user
+ Required for the RevenueCat Airship integration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAirshipChannelID</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">airshipChannelID</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>airshipChannelID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L552">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setMediaSource:"></a>
+                    <a name="//apple_ref/objc/Method/-setMediaSource:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setMediaSource:">-setMediaSource:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the install media source for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setMediaSource</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">mediaSource</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mediaSource</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L559">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setCampaign:"></a>
+                    <a name="//apple_ref/objc/Method/-setCampaign:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setCampaign:">-setCampaign:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the install campaign for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCampaign</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">campaign</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>campaign</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L566">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setAdGroup:"></a>
+                    <a name="//apple_ref/objc/Method/-setAdGroup:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setAdGroup:">-setAdGroup:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the install ad group for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAdGroup</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">adGroup</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adGroup</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L573">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setAd:"></a>
+                    <a name="//apple_ref/objc/Method/-setAd:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setAd:">-setAd:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the install ad for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAd</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">ad</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L580">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setKeyword:"></a>
+                    <a name="//apple_ref/objc/Method/-setKeyword:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setKeyword:">-setKeyword:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the install keyword for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setKeyword</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">keyword</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyword</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L587">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)setCreative:"></a>
+                    <a name="//apple_ref/objc/Method/-setCreative:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)setCreative:">-setCreative:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subscriber attribute associated with the install ad creative for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCreative</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">creative</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>creative</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Empty String or nil will delete the subscriber attribute.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L594">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchases(im)collectDeviceIdentifiers"></a>
+                    <a name="//apple_ref/objc/Method/-collectDeviceIdentifiers" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchases(im)collectDeviceIdentifiers">-collectDeviceIdentifiers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Automatically collect subscriber attributes associated with the device identifiers
+ $idfa, $idfv, $ip</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">collectDeviceIdentifiers</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchases.h#L601">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://revenuecat.com" target="_blank" rel="external">RevenueCat</a>. All rights reserved. (Last updated: 2022-02-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

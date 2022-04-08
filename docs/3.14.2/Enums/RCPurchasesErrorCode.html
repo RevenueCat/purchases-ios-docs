@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RCPurchasesErrorCode Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Enum/RCPurchasesErrorCode" class="dashAnchor"></a>
+    <a title="RCPurchasesErrorCode Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Purchases 3.14.1 Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/revenuecat/purchases-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Purchases Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RCPurchasesErrorCode Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfo.html">RCEntitlementInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfos.html">RCEntitlementInfos</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCIntroEligibility.html">RCIntroEligibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOffering.html">RCOffering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOfferings.html">RCOfferings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPackage.html">RCPackage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchases.html">RCPurchases</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchasesErrorUtils.html">RCPurchasesErrorUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)RCPurchasesErrors">RCPurchasesErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCTransaction.html">RCTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionNumber">PurchasesVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionString">PurchasesVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCBackendErrorDomain">RCBackendErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCFinishableKey">RCFinishableKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCPurchasesErrorDomain">RCPurchasesErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCReadableErrorCodeKey">RCReadableErrorCodeKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCBackendErrorCode.html">RCBackendErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCIntroEligibilityStatus.html">RCIntroEligibilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCLogLevel.html">RCLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPackageType.html">RCPackageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPeriodType.html">RCPeriodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchaseOwnershipType.html">RCPurchaseOwnershipType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchasesErrorCode.html">RCPurchasesErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCStore.html">RCStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RCPurchasesDelegate.html">RCPurchasesDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCDeferredPromotionalPurchaseBlock">RCDeferredPromotionalPurchaseBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPaymentDiscountBlock">RCPaymentDiscountBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveIntroEligibilityBlock">RCReceiveIntroEligibilityBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveOfferingsBlock">RCReceiveOfferingsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveProductsBlock">RCReceiveProductsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RCPurchasesErrorCode</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">RCPurchasesErrorCode</span> <span class="o">:</span> <span class="n">NSInteger</span> <span class="p">{}</span></code></pre>
+
+                </div>
+              </div>
+            <p>Error codes used by the Purchases SDK</p>
+
+              <div class="slightly-smaller">
+                <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L33-L58">Show on GitHub</a>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCUnknownError"></a>
+                    <a name="//apple_ref/objc/Case/RCUnknownError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCUnknownError">RCUnknownError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCUnknownError</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCPurchaseCancelledError"></a>
+                    <a name="//apple_ref/objc/Case/RCPurchaseCancelledError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCPurchaseCancelledError">RCPurchaseCancelledError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCPurchaseCancelledError</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCStoreProblemError"></a>
+                    <a name="//apple_ref/objc/Case/RCStoreProblemError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCStoreProblemError">RCStoreProblemError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCStoreProblemError</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCPurchaseNotAllowedError"></a>
+                    <a name="//apple_ref/objc/Case/RCPurchaseNotAllowedError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCPurchaseNotAllowedError">RCPurchaseNotAllowedError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCPurchaseNotAllowedError</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCPurchaseInvalidError"></a>
+                    <a name="//apple_ref/objc/Case/RCPurchaseInvalidError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCPurchaseInvalidError">RCPurchaseInvalidError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCPurchaseInvalidError</span> <span class="o">=</span> <span class="mi">4</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCProductNotAvailableForPurchaseError"></a>
+                    <a name="//apple_ref/objc/Case/RCProductNotAvailableForPurchaseError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCProductNotAvailableForPurchaseError">RCProductNotAvailableForPurchaseError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCProductNotAvailableForPurchaseError</span> <span class="o">=</span> <span class="mi">5</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCProductAlreadyPurchasedError"></a>
+                    <a name="//apple_ref/objc/Case/RCProductAlreadyPurchasedError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCProductAlreadyPurchasedError">RCProductAlreadyPurchasedError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCProductAlreadyPurchasedError</span> <span class="o">=</span> <span class="mi">6</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCReceiptAlreadyInUseError"></a>
+                    <a name="//apple_ref/objc/Case/RCReceiptAlreadyInUseError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCReceiptAlreadyInUseError">RCReceiptAlreadyInUseError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCReceiptAlreadyInUseError</span> <span class="o">=</span> <span class="mi">7</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCInvalidReceiptError"></a>
+                    <a name="//apple_ref/objc/Case/RCInvalidReceiptError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCInvalidReceiptError">RCInvalidReceiptError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCInvalidReceiptError</span> <span class="o">=</span> <span class="mi">8</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCMissingReceiptFileError"></a>
+                    <a name="//apple_ref/objc/Case/RCMissingReceiptFileError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCMissingReceiptFileError">RCMissingReceiptFileError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCMissingReceiptFileError</span> <span class="o">=</span> <span class="mi">9</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCNetworkError"></a>
+                    <a name="//apple_ref/objc/Case/RCNetworkError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCNetworkError">RCNetworkError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCNetworkError</span> <span class="o">=</span> <span class="mi">10</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCInvalidCredentialsError"></a>
+                    <a name="//apple_ref/objc/Case/RCInvalidCredentialsError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCInvalidCredentialsError">RCInvalidCredentialsError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCInvalidCredentialsError</span> <span class="o">=</span> <span class="mi">11</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCUnexpectedBackendResponseError"></a>
+                    <a name="//apple_ref/objc/Case/RCUnexpectedBackendResponseError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCUnexpectedBackendResponseError">RCUnexpectedBackendResponseError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCUnexpectedBackendResponseError</span> <span class="o">=</span> <span class="mi">12</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCReceiptInUseByOtherSubscriberError"></a>
+                    <a name="//apple_ref/objc/Case/RCReceiptInUseByOtherSubscriberError" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:@E@RCPurchasesErrorCode@RCReceiptInUseByOtherSubscriberError">RCReceiptInUseByOtherSubscriberError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use RCReceiptAlreadyInUseError.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCReceiptInUseByOtherSubscriberError</span> <span class="n">__attribute</span><span class="p">((</span><span class="n">deprecated</span><span class="p">(</span><span class="s">"Use RCReceiptAlreadyInUseError."</span><span class="p">)))</span> <span class="o">=</span> <span class="mi">13</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCInvalidAppUserIdError"></a>
+                    <a name="//apple_ref/objc/Case/RCInvalidAppUserIdError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCInvalidAppUserIdError">RCInvalidAppUserIdError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCInvalidAppUserIdError</span> <span class="o">=</span> <span class="mi">14</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCOperationAlreadyInProgressError"></a>
+                    <a name="//apple_ref/objc/Case/RCOperationAlreadyInProgressError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCOperationAlreadyInProgressError">RCOperationAlreadyInProgressError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCOperationAlreadyInProgressError</span> <span class="o">=</span> <span class="mi">15</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCUnknownBackendError"></a>
+                    <a name="//apple_ref/objc/Case/RCUnknownBackendError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCUnknownBackendError">RCUnknownBackendError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCUnknownBackendError</span> <span class="o">=</span> <span class="mi">16</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCInvalidAppleSubscriptionKeyError"></a>
+                    <a name="//apple_ref/objc/Case/RCInvalidAppleSubscriptionKeyError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCInvalidAppleSubscriptionKeyError">RCInvalidAppleSubscriptionKeyError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCInvalidAppleSubscriptionKeyError</span> <span class="o">=</span> <span class="mi">17</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCIneligibleError"></a>
+                    <a name="//apple_ref/objc/Case/RCIneligibleError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCIneligibleError">RCIneligibleError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCIneligibleError</span> <span class="o">=</span> <span class="mi">18</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCInsufficientPermissionsError"></a>
+                    <a name="//apple_ref/objc/Case/RCInsufficientPermissionsError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCInsufficientPermissionsError">RCInsufficientPermissionsError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCInsufficientPermissionsError</span> <span class="o">=</span> <span class="mi">19</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCPaymentPendingError"></a>
+                    <a name="//apple_ref/objc/Case/RCPaymentPendingError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCPaymentPendingError">RCPaymentPendingError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCPaymentPendingError</span> <span class="o">=</span> <span class="mi">20</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCInvalidSubscriberAttributesError"></a>
+                    <a name="//apple_ref/objc/Case/RCInvalidSubscriberAttributesError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCInvalidSubscriberAttributesError">RCInvalidSubscriberAttributesError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCInvalidSubscriberAttributesError</span> <span class="o">=</span> <span class="mi">21</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCLogOutAnonymousUserError"></a>
+                    <a name="//apple_ref/objc/Case/RCLogOutAnonymousUserError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCLogOutAnonymousUserError">RCLogOutAnonymousUserError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCLogOutAnonymousUserError</span> <span class="o">=</span> <span class="mi">22</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@RCPurchasesErrorCode@RCConfigurationError"></a>
+                    <a name="//apple_ref/objc/Case/RCConfigurationError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@RCPurchasesErrorCode@RCConfigurationError">RCConfigurationError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">RCConfigurationError</span> <span class="o">=</span> <span class="mi">23</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchasesErrors.h#L">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://revenuecat.com" target="_blank" rel="external">RevenueCat</a>. All rights reserved. (Last updated: 2022-02-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,446 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCLogLevel.h",
+      "line": 13,
+      "symbol": "RCLogLevel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCLogLevel.h",
+      "line": 13,
+      "symbol": "RCLogLevel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCLogLevel.h",
+      "line": 14,
+      "symbol": "RCLogLevel.RCLogLevelDebug",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCLogLevel.h",
+      "line": 15,
+      "symbol": "RCLogLevel.RCLogLevelInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCLogLevel.h",
+      "line": 16,
+      "symbol": "RCLogLevel.RCLogLevelWarn",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCLogLevel.h",
+      "line": 17,
+      "symbol": "RCLogLevel.RCLogLevelError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchaseOwnershipType.h",
+      "line": 11,
+      "symbol": "RCPurchaseOwnershipType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchaseOwnershipType.h",
+      "line": 11,
+      "symbol": "RCPurchaseOwnershipType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchases.h",
+      "line": 52,
+      "symbol": "RCPaymentDiscountBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 13,
+      "symbol": "RCPurchasesErrors",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 25,
+      "symbol": "RCFinishableKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 27,
+      "symbol": "RCReadableErrorCodeKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 34,
+      "symbol": "RCPurchasesErrorCode.RCUnknownError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 35,
+      "symbol": "RCPurchasesErrorCode.RCPurchaseCancelledError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 36,
+      "symbol": "RCPurchasesErrorCode.RCStoreProblemError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 37,
+      "symbol": "RCPurchasesErrorCode.RCPurchaseNotAllowedError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 38,
+      "symbol": "RCPurchasesErrorCode.RCPurchaseInvalidError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 39,
+      "symbol": "RCPurchasesErrorCode.RCProductNotAvailableForPurchaseError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 40,
+      "symbol": "RCPurchasesErrorCode.RCProductAlreadyPurchasedError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 41,
+      "symbol": "RCPurchasesErrorCode.RCReceiptAlreadyInUseError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 42,
+      "symbol": "RCPurchasesErrorCode.RCInvalidReceiptError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 43,
+      "symbol": "RCPurchasesErrorCode.RCMissingReceiptFileError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 44,
+      "symbol": "RCPurchasesErrorCode.RCNetworkError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 45,
+      "symbol": "RCPurchasesErrorCode.RCInvalidCredentialsError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 46,
+      "symbol": "RCPurchasesErrorCode.RCUnexpectedBackendResponseError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 47,
+      "symbol": "RCPurchasesErrorCode.RCReceiptInUseByOtherSubscriberError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 48,
+      "symbol": "RCPurchasesErrorCode.RCInvalidAppUserIdError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 49,
+      "symbol": "RCPurchasesErrorCode.RCOperationAlreadyInProgressError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 50,
+      "symbol": "RCPurchasesErrorCode.RCUnknownBackendError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 51,
+      "symbol": "RCPurchasesErrorCode.RCInvalidAppleSubscriptionKeyError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 52,
+      "symbol": "RCPurchasesErrorCode.RCIneligibleError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 53,
+      "symbol": "RCPurchasesErrorCode.RCInsufficientPermissionsError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 54,
+      "symbol": "RCPurchasesErrorCode.RCPaymentPendingError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 55,
+      "symbol": "RCPurchasesErrorCode.RCInvalidSubscriberAttributesError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 56,
+      "symbol": "RCPurchasesErrorCode.RCLogOutAnonymousUserError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 57,
+      "symbol": "RCPurchasesErrorCode.RCConfigurationError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 64,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidPlatform",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 65,
+      "symbol": "RCBackendErrorCode.RCBackendStoreProblem",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 66,
+      "symbol": "RCBackendErrorCode.RCBackendCannotTransferPurchase",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 67,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidReceiptToken",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 68,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidAppStoreSharedSecret",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 69,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidPaymentModeOrIntroPriceNotProvided",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 70,
+      "symbol": "RCBackendErrorCode.RCBackendProductIdForGoogleReceiptNotProvided",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 71,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidPlayStoreCredentials",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 72,
+      "symbol": "RCBackendErrorCode.RCBackendInternalServerError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 73,
+      "symbol": "RCBackendErrorCode.RCBackendEmptyAppUserId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 74,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidAuthToken",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 75,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidAPIKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 76,
+      "symbol": "RCBackendErrorCode.RCBackendBadRequest",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 77,
+      "symbol": "RCBackendErrorCode.RCBackendPlayStoreQuotaExceeded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 78,
+      "symbol": "RCBackendErrorCode.RCBackendPlayStoreInvalidPackageName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 79,
+      "symbol": "RCBackendErrorCode.RCBackendPlayStoreGenericError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 80,
+      "symbol": "RCBackendErrorCode.RCBackendUserIneligibleForPromoOffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 81,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidAppleSubscriptionKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 82,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidSubscriberAttributes",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCPurchasesErrors.h",
+      "line": 83,
+      "symbol": "RCBackendErrorCode.RCBackendInvalidSubscriberAttributesBody",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCTransaction.h",
+      "line": 14,
+      "symbol": "RCTransaction",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCTransaction.h",
+      "line": 16,
+      "symbol": "RCTransaction.revenueCatId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCTransaction.h",
+      "line": 17,
+      "symbol": "RCTransaction.productId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCTransaction.h",
+      "line": 18,
+      "symbol": "RCTransaction.purchaseDate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCTransaction.h",
+      "line": 20,
+      "symbol": "RCTransaction.-initWithTransactionId:productId:purchaseDate:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCTransaction.h",
+      "line": 23,
+      "symbol": "RCTransaction.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/distiller/purchases-ios/Purchases/Public/RCTransaction.h",
+      "line": 24,
+      "symbol": "RCTransaction.+new",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/distiller/purchases-ios"
+}

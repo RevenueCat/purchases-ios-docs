@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RCPurchaserInfo Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/RCPurchaserInfo" class="dashAnchor"></a>
+    <a title="RCPurchaserInfo Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Purchases 3.14.1 Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/revenuecat/purchases-ios"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Purchases Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RCPurchaserInfo Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfo.html">RCEntitlementInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCEntitlementInfos.html">RCEntitlementInfos</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCIntroEligibility.html">RCIntroEligibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOffering.html">RCOffering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCOfferings.html">RCOfferings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPackage.html">RCPackage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchaserInfo.html">RCPurchaserInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchases.html">RCPurchases</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCPurchasesErrorUtils.html">RCPurchasesErrorUtils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)RCPurchasesErrors">RCPurchasesErrors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RCTransaction.html">RCTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionNumber">PurchasesVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PurchasesVersionString">PurchasesVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCBackendErrorDomain">RCBackendErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCFinishableKey">RCFinishableKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCPurchasesErrorDomain">RCPurchasesErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@RCReadableErrorCodeKey">RCReadableErrorCodeKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RCAttributionNetwork.html">RCAttributionNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCBackendErrorCode.html">RCBackendErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCIntroEligibilityStatus.html">RCIntroEligibilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCLogLevel.html">RCLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPackageType.html">RCPackageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPeriodType.html">RCPeriodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchaseOwnershipType.html">RCPurchaseOwnershipType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCPurchasesErrorCode.html">RCPurchasesErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RCStore.html">RCStore</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/RCPurchasesDelegate.html">RCPurchasesDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCDeferredPromotionalPurchaseBlock">RCDeferredPromotionalPurchaseBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPaymentDiscountBlock">RCPaymentDiscountBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCPurchaseCompletedBlock">RCPurchaseCompletedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveIntroEligibilityBlock">RCReceiveIntroEligibilityBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveOfferingsBlock">RCReceiveOfferingsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceiveProductsBlock">RCReceiveProductsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:RCPurchases.h@T@RCReceivePurchaserInfoBlock">RCReceivePurchaserInfoBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RCPurchaserInfo</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">RCPurchaserInfo</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A container for the most recent purchaser info returned from <code><a href="../Classes/RCPurchases.html">RCPurchases</a></code>. These objects are non-mutable and do not update automatically.</p>
+
+              <div class="slightly-smaller">
+                <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L19-L112">Show on GitHub</a>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)entitlements"></a>
+                    <a name="//apple_ref/objc/Property/entitlements" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)entitlements">entitlements</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Entitlements attached to this purchaser info</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Classes/RCEntitlementInfos.html">RCEntitlementInfos</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">entitlements</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L22">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)activeSubscriptions"></a>
+                    <a name="//apple_ref/objc/Property/activeSubscriptions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)activeSubscriptions">activeSubscriptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All <em>subscription</em> product identifiers with expiration dates in the future.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSSet</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">activeSubscriptions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L25">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)allPurchasedProductIdentifiers"></a>
+                    <a name="//apple_ref/objc/Property/allPurchasedProductIdentifiers" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)allPurchasedProductIdentifiers">allPurchasedProductIdentifiers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>All product identifiers purchases by the user regardless of expiration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSSet</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">allPurchasedProductIdentifiers</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L28">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)latestExpirationDate"></a>
+                    <a name="//apple_ref/objc/Property/latestExpirationDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)latestExpirationDate">latestExpirationDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the latest expiration date of all products, nil if there are none</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">latestExpirationDate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L31">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)nonConsumablePurchases"></a>
+                    <a name="//apple_ref/objc/Property/nonConsumablePurchases" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)RCPurchaserInfo(py)nonConsumablePurchases">nonConsumablePurchases</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>use nonSubscriptionTransactions</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>Returns all product IDs of the non-subscription purchases a user has made.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">DEPRECATED_MSG_ATTRIBUTE</span><span class="p">(</span><span class="s">"use nonSubscriptionTransactions"</span><span class="p">)</span> <span class="n">NSSet</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">nonConsumablePurchases</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L34">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)nonSubscriptionTransactions"></a>
+                    <a name="//apple_ref/objc/Property/nonSubscriptionTransactions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)nonSubscriptionTransactions">nonSubscriptionTransactions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns all the non-subscription purchases a user has made.
+The purchases are ordered by purchase date in ascending order.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/RCTransaction.html">RCTransaction</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">nonSubscriptionTransactions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L38">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)originalApplicationVersion"></a>
+                    <a name="//apple_ref/objc/Property/originalApplicationVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)originalApplicationVersion">originalApplicationVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the build number (in iOS) or the marketing version (in macOS) for the version of the application when the user bought the app.
+This corresponds to the value of CFBundleVersion (in iOS) or CFBundleShortVersionString (in macOS) in the Info.plist file when the purchase was originally made.
+Use this for grandfathering users when migrating to subscriptions.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This can be nil, see -[RCPurchases restoreTransactionsForAppStore:]
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">originalApplicationVersion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L48">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)originalPurchaseDate"></a>
+                    <a name="//apple_ref/objc/Property/originalPurchaseDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)originalPurchaseDate">originalPurchaseDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the purchase date for the version of the application when the user bought the app.
+Use this for grandfathering users when migrating to subscriptions.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This can be nil, see -[RCPurchases restoreTransactionsForAppStore:]
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">originalPurchaseDate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L56">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)requestDate"></a>
+                    <a name="//apple_ref/objc/Property/requestDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)requestDate">requestDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the fetch date of this Purchaser info.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Can be nil if was cached before we added this
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">requestDate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L62">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)firstSeen"></a>
+                    <a name="//apple_ref/objc/Property/firstSeen" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)firstSeen">firstSeen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The date this user was first seen in RevenueCat.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">firstSeen</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L65">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)originalAppUserId"></a>
+                    <a name="//apple_ref/objc/Property/originalAppUserId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)originalAppUserId">originalAppUserId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The original App User Id recorded for this user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">originalAppUserId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L68">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(py)managementURL"></a>
+                    <a name="//apple_ref/objc/Property/managementURL" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(py)managementURL">managementURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URL to manage the active subscription of the user.
+If this user has an active iOS subscription, this will point to the App Store,
+if the user has an active Play Store subscription it will point there.
+If there are no active subscriptions it will be null.
+If there are multiple for different platforms, it will point to the App Store</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">managementURL</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L75">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(im)expirationDateForProductIdentifier:"></a>
+                    <a name="//apple_ref/objc/Method/-expirationDateForProductIdentifier:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(im)expirationDateForProductIdentifier:">-expirationDateForProductIdentifier:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the expiration date for a given product identifier. You should use Entitlements though!</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">expirationDateForProductIdentifier</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">productIdentifier</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>productIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Product identifier for product</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The expiration date for <code>productIdentifier</code>, <code>nil</code> if product never purchased</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L84">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(im)purchaseDateForProductIdentifier:"></a>
+                    <a name="//apple_ref/objc/Method/-purchaseDateForProductIdentifier:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(im)purchaseDateForProductIdentifier:">-purchaseDateForProductIdentifier:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the latest purchase or renewal date for a given product identifier. You should use Entitlements though!</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">purchaseDateForProductIdentifier</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">productIdentifier</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>productIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Product identifier for subscription product</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The purchase date for <code>productIdentifier</code>, <code>nil</code> if product never purchased</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L93">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(im)expirationDateForEntitlement:"></a>
+                    <a name="//apple_ref/objc/Method/-expirationDateForEntitlement:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(im)expirationDateForEntitlement:">-expirationDateForEntitlement:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the expiration date for a given entitlement.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">expirationDateForEntitlement</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">entitlementId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>entitlementId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the entitlement.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The expiration date for the passed in <code>entitlement</code>, can be <code>nil</code></p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L101">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RCPurchaserInfo(im)purchaseDateForEntitlement:"></a>
+                    <a name="//apple_ref/objc/Method/-purchaseDateForEntitlement:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RCPurchaserInfo(im)purchaseDateForEntitlement:">-purchaseDateForEntitlement:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the latest purchase or renewal date for a given entitlement identifier.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">purchaseDateForEntitlement</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">entitlementId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>entitlementId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Entitlement identifier for entitlement</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The purchase date for <code>entitlementId</code>, <code>nil</code> if product never purchased</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/revenuecat/purchases-ios/tree/3.14.1/Purchases/Public/RCPurchaserInfo.h#L110">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://revenuecat.com" target="_blank" rel="external">RevenueCat</a>. All rights reserved. (Last updated: 2022-02-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
