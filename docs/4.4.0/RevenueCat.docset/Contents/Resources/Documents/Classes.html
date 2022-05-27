@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Classes" class="dashAnchor"></a>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">RevenueCat 4.4.0 Docs</a> (82% documented)</p>
+        <p class="header-right"><a href="https://github.com/revenuecat/purchases-ios"><img src="img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">RevenueCat Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        Classes  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Configuration/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CustomerInfo.html">CustomerInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DangerousSettings.html">DangerousSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EntitlementInfo.html">EntitlementInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/EntitlementInfos.html">EntitlementInfos</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/IntroEligibility.html">IntroEligibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Offering.html">Offering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Offerings.html">Offerings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Package.html">Package</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PromotionalOffer.html">PromotionalOffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PromotionalOffer/SignedData.html">– SignedData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Purchases.html">Purchases</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Purchases/PlatformInfo.html">– PlatformInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StoreProduct.html">StoreProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StoreProduct/ProductCategory.html">– ProductCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StoreProduct/ProductType.html">– ProductType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StoreProductDiscount.html">StoreProductDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StoreProductDiscount/PaymentMode.html">– PaymentMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StoreProductDiscount/DiscountType.html">– DiscountType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StoreProductDiscount.html#/s:10RevenueCat20StoreProductDiscountC4DataV">– Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StoreTransaction.html">StoreTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Storefront.html">Storefront</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SubscriptionPeriod.html">SubscriptionPeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SubscriptionPeriod/Unit.html">– Unit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/AttributionNetwork.html">AttributionNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ErrorCode.html">ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/IntroEligibilityStatus.html">IntroEligibilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PackageType.html">PackageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PeriodType.html">PeriodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PurchaseOwnershipType.html">PurchaseOwnershipType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RefundRequestStatus.html">RefundRequestStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions.html#/ETagManager">ETagManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/HTTPRequest">HTTPRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/ManageSubscriptionsHelper">ManageSubscriptionsHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/OfferingsManager">OfferingsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/PostReceiptDataOperation">PostReceiptDataOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/Product">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions.html#/ProductsFetcherSK2">ProductsFetcherSK2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/PurchasesDelegate.html">PurchasesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/RawDataContainer.html">RawDataContainer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat10LogHandlera">LogHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat22PurchaseCompletedBlocka">PurchaseCompletedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat18PurchaseResultDataa">PurchaseResultData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat10SK1Producta">SK1Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat18SK1ProductDiscounta">SK1ProductDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat14SK1Transactiona">SK1Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat10SK2Producta">SK2Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat18SK2ProductDiscounta">SK2ProductDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat14SK2Transactiona">SK2Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat18StartPurchaseBlocka">StartPurchaseBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:10RevenueCat17VerboseLogHandlera">VerboseLogHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCCustomerInfo"></a>
+                    <a name="//apple_ref/swift/Class/CustomerInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCCustomerInfo">CustomerInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A container for the most recent customer info returned from <code><a href="Classes/Purchases.html">Purchases</a></code>.
+These objects are non-mutable and do not update automatically.</p>
+
+                        <a href="Classes/CustomerInfo.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCCustomerInfo)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">CustomerInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CustomerInfo</span><span class="p">:</span> <span class="kt"><a href="Protocols/RawDataContainer.html">RawDataContainer</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CustomerInfo</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Identity/CustomerInfo.swift#L21-L197">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCDangerousSettings"></a>
+                    <a name="//apple_ref/swift/Class/DangerousSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCDangerousSettings">DangerousSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Only use a Dangerous Setting if suggested by RevenueCat support team.</p>
+
+                        <a href="Classes/DangerousSettings.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCDangerousSettings)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">DangerousSettings</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Misc/DangerousSettings.swift#L14-L41">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Block%20definitions"></a>
+                <a name="//apple_ref/swift/Section/Block definitions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Block%20definitions"></a>
+                  <h3 class="section-name"><span>Block definitions</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCPurchases"></a>
+                    <a name="//apple_ref/swift/Class/Purchases" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCPurchases">Purchases</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Purchases</code> is the entry point for RevenueCat.framework. It should be instantiated as soon as your app has a unique
+user id for your user. This can be when a user logs in if you have accounts or on launch if you can generate a random
+user identifier.</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Only one instance of Purchases should be instantiated at a time! Use a configure method to let the
+framework handle the singleton instance for you.
+
+</div>
+
+                        <a href="Classes/Purchases.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCPurchases)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Purchases</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Purchases.swift#L46-L489">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCStoreProduct"></a>
+                    <a name="//apple_ref/swift/Class/StoreProduct" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCStoreProduct">StoreProduct</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type that provides access to all of <code>StoreKit</code>&lsquo;s product type&rsquo;s properties.</p>
+
+                        <a href="Classes/StoreProduct.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCStoreProduct)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">StoreProduct</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">StoreProductType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/StoreKitAbstractions/StoreProduct.swift#L27-L99">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCConfiguration"></a>
+                    <a name="//apple_ref/swift/Class/Configuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCConfiguration">Configuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>Configuration</code> can be used when configuring the <code><a href="Classes/Purchases.html">Purchases</a></code> instance. It is not required to be used, but
+ highly recommended. This class follows a builder pattern.</p>
+
+<p>To configure your <code><a href="Classes/Purchases.html">Purchases</a></code> instance using this object, follow these steps.</p>
+
+<p><strong>Steps:</strong></p>
+
+<ol>
+<li>Call <code><a href="Classes/Configuration.html#/c:@M@RevenueCat@objc(cs)RCConfiguration(cm)builderWithAPIKey:">builder(withAPIKey:)</a></code> To obtain a <code>Builder</code> object.</li>
+<li>Set this builder&rsquo;s properties using the &ldquo;<code>with(</code>&rdquo; functions.</li>
+<li>Call <code>Builder/build()</code> to obtain the <code>Configuration</code> object.</li>
+<li>Pass the <code>Configuration</code> object into <code><a href="Classes/Purchases.html#/c:@CM@RevenueCat@objc(cs)RCPurchases(cm)configureWithConfiguration:">configure(with:)</a></code>.</li>
+</ol>
+<pre class="highlight swift"><code> <span class="k">let</span> <span class="nv">configuration</span> <span class="o">=</span> <span class="kt">Configuration</span><span class="o">.</span><span class="kt">Builder</span><span class="p">(</span><span class="nv">withAPIKey</span><span class="p">:</span> <span class="s">"MyKey"</span><span class="p">)</span>
+                                  <span class="o">.</span><span class="nf">with</span><span class="p">(</span><span class="nv">appUserID</span><span class="p">:</span> <span class="s">"SomeAppUserID"</span><span class="p">)</span>
+                                  <span class="o">.</span><span class="nf">with</span><span class="p">(</span><span class="nv">userDefaults</span><span class="p">:</span> <span class="n">myUserDefaults</span><span class="p">)</span>
+                                  <span class="o">.</span><span class="nf">with</span><span class="p">(</span><span class="nv">networkTimeout</span><span class="p">:</span> <span class="mi">15</span><span class="p">)</span>
+                                  <span class="o">.</span><span class="nf">with</span><span class="p">(</span><span class="nv">storeKit1Timeout</span><span class="p">:</span> <span class="mi">15</span><span class="p">)</span>
+                                  <span class="o">.</span><span class="nf">with</span><span class="p">(</span><span class="nv">usesStoreKit2IfAvailable</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+                                  <span class="o">.</span><span class="nf">build</span><span class="p">()</span>
+  <span class="kt">Purchases</span><span class="o">.</span><span class="nf">configure</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">configuration</span><span class="p">)</span>
+</code></pre>
+
+                        <a href="Classes/Configuration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCConfiguration)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Configuration</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L39-L188">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCEntitlementInfo"></a>
+                    <a name="//apple_ref/swift/Class/EntitlementInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCEntitlementInfo">EntitlementInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The EntitlementInfo object gives you access to all of the information about the status of a user entitlement.</p>
+
+                        <a href="Classes/EntitlementInfo.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCEntitlementInfo)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">EntitlementInfo</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">EntitlementInfo</span><span class="p">:</span> <span class="kt"><a href="Protocols/RawDataContainer.html">RawDataContainer</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">EntitlementInfo</span><span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/EntitlementInfo.swift#L79-L279">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCEntitlementInfos"></a>
+                    <a name="//apple_ref/swift/Class/EntitlementInfos" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCEntitlementInfos">EntitlementInfos</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class contains all the entitlements associated to the user.</p>
+
+                        <a href="Classes/EntitlementInfos.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCEntitlementInfos)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">EntitlementInfos</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/EntitlementInfos.swift#L20-L69">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCIntroEligibility"></a>
+                    <a name="//apple_ref/swift/Class/IntroEligibility" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCIntroEligibility">IntroEligibility</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Holds the introductory price status</p>
+
+                        <a href="Classes/IntroEligibility.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCIntroEligibility)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">IntroEligibility</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/IntroEligibility.swift#L85-L115">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCOffering"></a>
+                    <a name="//apple_ref/swift/Class/Offering" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCOffering">Offering</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An offering is a collection of <code><a href="Classes/Package.html">Package</a></code>s, and they let you control which products
+ are shown to users without requiring an app update.</p>
+
+<p>Building paywalls that are dynamic and can react to different product
+ configurations gives you maximum flexibility to make remote updates.</p>
+
+<p>#### Related Articles</p>
+
+<ul>
+<li><a href="https://docs.revenuecat.com/docs/displaying-products">Displaying Products</a></li>
+<li><code><a href="Classes/Offerings.html">Offerings</a></code></li>
+<li><code><a href="Classes/Package.html">Package</a></code></li>
+</ul>
+
+                        <a href="Classes/Offering.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCOffering)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Offering</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Offering</span><span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Offering.swift#L29-L167">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCOfferings"></a>
+                    <a name="//apple_ref/swift/Class/Offerings" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCOfferings">Offerings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class contains all the offerings configured in RevenueCat dashboard.
+ Offerings let you control which products are shown to users without requiring an app update.</p>
+
+<p>Building paywalls that are dynamic and can react to different product
+ configurations gives you maximum flexibility to make remote updates.</p>
+
+<p>#### Related Articles</p>
+
+<ul>
+<li><a href="https://docs.revenuecat.com/docs/displaying-products">Displaying Products</a></li>
+<li><code><a href="Classes/Offering.html">Offering</a></code></li>
+<li><code><a href="Classes/Package.html">Package</a></code></li>
+</ul>
+
+                        <a href="Classes/Offerings.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCOfferings)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Offerings</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Offerings.swift#L29-L82">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCPackage"></a>
+                    <a name="//apple_ref/swift/Class/Package" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCPackage">Package</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Packages help abstract platform-specific products by grouping equivalent products across iOS, Android, and web.
+A package is made up of three parts: <code>identifier</code>, <code>packageType</code>, and underlying <code><a href="Classes/StoreProduct.html">StoreProduct</a></code>.</p>
+<h4 id='related-articles' class='heading'>Related Articles</h4>
+
+<ul>
+<li><a href="https://docs.revenuecat.com/docs/displaying-products#displaying-packages">Displaying Packages</a></li>
+<li><code><a href="Classes/Offering.html">Offering</a></code></li>
+<li><code><a href="Classes/Offerings.html">Offerings</a></code></li>
+</ul>
+
+                        <a href="Classes/Package.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCPackage)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Package</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Package</span><span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Package.swift#L26-L76">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCPromotionalOffer"></a>
+                    <a name="//apple_ref/swift/Class/PromotionalOffer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCPromotionalOffer">PromotionalOffer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a <code><a href="Classes/StoreProductDiscount.html">StoreProductDiscount</a></code> that has been validated and
+is ready to be used for a purchase.</p>
+<h4 id='related-symbols' class='heading'>Related Symbols</h4>
+
+<ul>
+<li><code><a href="Classes/Purchases.html#/s:10RevenueCat9PurchasesC16promotionalOffer18forProductDiscount7productAA011PromotionalE0CAA05StoregH0C_AA0kG0CtYaKF">promotionalOffer(forProductDiscount:product:)</a></code></li>
+<li><code><a href="Classes/Purchases.html#/c:@CM@RevenueCat@objc(cs)RCPurchases(im)getPromotionalOfferForProductDiscount:withProduct:withCompletion:">getPromotionalOffer(forProductDiscount:product:completion:)</a></code></li>
+<li><code><a href="Classes/StoreProduct.html#/s:10RevenueCat12StoreProductC25eligiblePromotionalOffersSayAA0F5OfferCGyYaF">eligiblePromotionalOffers()</a></code></li>
+<li><code><a href="Classes/Purchases.html#/s:10RevenueCat9PurchasesC25eligiblePromotionalOffers10forProductSayAA0E5OfferCGAA05StoreH0C_tYaF">eligiblePromotionalOffers(forProduct:)</a></code></li>
+<li><code><a href="Classes/Purchases.html#/s:10RevenueCat9PurchasesC8purchase7package16promotionalOfferAA16StoreTransactionCSg11transaction_AA12CustomerInfoC08customerL0Sb13userCancelledtAA7PackageC_AA011PromotionalG0CtYaKF">purchase(package:promotionalOffer:)</a></code></li>
+<li><code><a href="Classes/Purchases.html#/c:@CM@RevenueCat@objc(cs)RCPurchases(im)purchasePackage:withPromotionalOffer:completion:">purchase(package:promotionalOffer:completion:)</a></code></li>
+<li><code><a href="Classes/Purchases.html#/s:10RevenueCat9PurchasesC8purchase7product16promotionalOfferAA16StoreTransactionCSg11transaction_AA12CustomerInfoC08customerL0Sb13userCancelledtAA0H7ProductC_AA011PromotionalG0CtYaKF">purchase(product:promotionalOffer:)</a></code></li>
+<li><code><a href="Classes/Purchases.html#/c:@CM@RevenueCat@objc(cs)RCPurchases(im)purchaseProduct:withPromotionalOffer:completion:">purchase(product:promotionalOffer:completion:)</a></code></li>
+</ul>
+
+                        <a href="Classes/PromotionalOffer.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCPromotionalOffer)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PromotionalOffer</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/StoreKitAbstractions/PromotionalOffer.swift#L30-L42">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCStoreProductDiscount"></a>
+                    <a name="//apple_ref/swift/Class/StoreProductDiscount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCStoreProductDiscount">StoreProductDiscount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Type that wraps <code>StoreKit.Product.SubscriptionOffer</code> and <code>SKProductDiscount</code>
+and provides access to their properties.
+Information about a subscription offer that you configured in App Store Connect.</p>
+
+                        <a href="Classes/StoreProductDiscount.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCStoreProductDiscount)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">StoreProductDiscount</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">StoreProductDiscountType</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">StoreProductDiscount</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">StoreProductDiscount</span><span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/StoreKitAbstractions/StoreProductDiscount.swift#L30-L99">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCStoreTransaction"></a>
+                    <a name="//apple_ref/swift/Class/StoreTransaction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCStoreTransaction">StoreTransaction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Abstract class that provides access to properties of a transaction.
+<code>StoreTransaction</code>s can represent transactions from StoreKit 1, StoreKit 2 or
+transactions made from other places, like Stripe, Google Play or Amazon Store.</p>
+
+                        <a href="Classes/StoreTransaction.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCStoreTransaction)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">StoreTransaction</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">StoreTransactionType</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">StoreTransaction</span><span class="p">:</span> <span class="kt">Identifiable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/StoreKitAbstractions/StoreTransaction.swift#L27-L65">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCStorefront"></a>
+                    <a name="//apple_ref/swift/Class/Storefront" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCStorefront">Storefront</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An object containing the location and unique identifier of an Apple App Store storefront.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Don&rsquo;t save the storefront information with your user information; storefront information can change
+at any time. Always get the storefront identifier immediately before you display product information or availability
+to the user in your app. Storefront information may not be used to develop or enhance a user profile,
+or track customers for advertising or marketing purposes.
+
+</div>
+
+                        <a href="Classes/Storefront.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCStorefront)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Storefront</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">StorefrontType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/StoreKitAbstractions/Storefront.swift#L24-L70">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RevenueCat@objc(cs)RCSubscriptionPeriod"></a>
+                    <a name="//apple_ref/swift/Class/SubscriptionPeriod" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RevenueCat@objc(cs)RCSubscriptionPeriod">SubscriptionPeriod</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The duration of time between subscription renewals.
+Use the value and the unit together to determine the subscription period.
+For example, if the unit is  <code>.month</code>, and the value is <code>3</code>, the subscription period is three months.</p>
+
+                        <a href="Classes/SubscriptionPeriod.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(RCSubscriptionPeriod)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">SubscriptionPeriod</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">SubscriptionPeriod</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/StoreKitAbstractions/SubscriptionPeriod.swift#L21-L85">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://revenuecat.com" target="_blank" rel="external noopener">RevenueCat</a>. All rights reserved. (Last updated: 2022-05-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

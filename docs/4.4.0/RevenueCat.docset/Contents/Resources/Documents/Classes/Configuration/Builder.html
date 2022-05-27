@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Builder Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Builder" class="dashAnchor"></a>
+    <a title="Builder Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">RevenueCat 4.4.0 Docs</a> (82% documented)</p>
+        <p class="header-right"><a href="https://github.com/revenuecat/purchases-ios"><img src="../../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">RevenueCat Reference</a>
+        <img id="carat" src="../../img/carat.png" alt=""/>
+        Builder Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Configuration/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/CustomerInfo.html">CustomerInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/DangerousSettings.html">DangerousSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/EntitlementInfo.html">EntitlementInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/EntitlementInfos.html">EntitlementInfos</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/IntroEligibility.html">IntroEligibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Offering.html">Offering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Offerings.html">Offerings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Package.html">Package</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/PromotionalOffer.html">PromotionalOffer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/PromotionalOffer/SignedData.html">– SignedData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Purchases.html">Purchases</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Purchases/PlatformInfo.html">– PlatformInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/StoreProduct.html">StoreProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/StoreProduct/ProductCategory.html">– ProductCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/StoreProduct/ProductType.html">– ProductType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/StoreProductDiscount.html">StoreProductDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/StoreProductDiscount/PaymentMode.html">– PaymentMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/StoreProductDiscount/DiscountType.html">– DiscountType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/StoreProductDiscount.html#/s:10RevenueCat20StoreProductDiscountC4DataV">– Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/StoreTransaction.html">StoreTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Storefront.html">Storefront</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/SubscriptionPeriod.html">SubscriptionPeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/SubscriptionPeriod/Unit.html">– Unit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/AttributionNetwork.html">AttributionNetwork</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/ErrorCode.html">ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/IntroEligibilityStatus.html">IntroEligibilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/PackageType.html">PackageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/PeriodType.html">PeriodType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/PurchaseOwnershipType.html">PurchaseOwnershipType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/RefundRequestStatus.html">RefundRequestStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Extensions.html#/ETagManager">ETagManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions.html#/HTTPRequest">HTTPRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions.html#/ManageSubscriptionsHelper">ManageSubscriptionsHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions.html#/OfferingsManager">OfferingsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions.html#/PostReceiptDataOperation">PostReceiptDataOperation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions.html#/Product">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions.html#/ProductsFetcherSK2">ProductsFetcherSK2</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/PurchasesDelegate.html">PurchasesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/RawDataContainer.html">RawDataContainer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat10LogHandlera">LogHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat22PurchaseCompletedBlocka">PurchaseCompletedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat18PurchaseResultDataa">PurchaseResultData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat10SK1Producta">SK1Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat18SK1ProductDiscounta">SK1ProductDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat14SK1Transactiona">SK1Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat10SK2Producta">SK2Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat18SK2ProductDiscounta">SK2ProductDiscount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat14SK2Transactiona">SK2Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat18StartPurchaseBlocka">StartPurchaseBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:10RevenueCat17VerboseLogHandlera">VerboseLogHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Builder</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc(RCConfigurationBuilder)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">Builder</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The Builder for <code><a href="../../Classes/Configuration.html">Configuration</a></code>.</p>
+
+              <div class="slightly-smaller">
+                <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L72-L186">Show on GitHub</a>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC10withAPIKeyAESS_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(withAPIKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC10withAPIKeyAESS_tcfc">init(withAPIKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new builder with your API key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">withAPIKey</span> <span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>apiKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The API Key generated for your app from <a href="https://app.revenuecat.com/">https://app.revenuecat.com/</a></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L89-L91">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC4with6apiKeyAESS_tF"></a>
+                    <a name="//apple_ref/swift/Method/with(apiKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC4with6apiKeyAESS_tF">with(apiKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update your API key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="nv">apiKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L94-L97">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC4with9appUserIDAESS_tF"></a>
+                    <a name="//apple_ref/swift/Method/with(appUserID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC4with9appUserIDAESS_tF">with(appUserID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set an <code>appUserID</code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Best practice is to use a salted hash of your unique app user ids.</p>
+
+</div><div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Set this property if you have your own user identifiers that you manage.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="nv">appUserID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appUserID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique app user id for this user. This user id will allow users to share their
+purchases and subscriptions across devices. Pass <code>nil</code> or an empty string if you want <code><a href="../../Classes/Purchases.html">Purchases</a></code>
+to generate this for you.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L109-L112">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC4with12observerModeAESb_tF"></a>
+                    <a name="//apple_ref/swift/Method/with(observerMode:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC4with12observerModeAESb_tF">with(observerMode:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set <code>observerMode</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="nv">observerMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>observerMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set this to <code>true</code> if you have your own IAP implementation and want to use only
+RevenueCat&rsquo;s backend. Default is <code>false</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L119-L122">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC4with12userDefaultsAESo06NSUserG0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/with(userDefaults:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC4with12userDefaultsAESo06NSUserG0C_tF">with(userDefaults:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set <code>userDefaults</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="nv">userDefaults</span><span class="p">:</span> <span class="kt">UserDefaults</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userDefaults</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Custom <code>UserDefaults</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L128-L131">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC4with24usesStoreKit2IfAvailableAESb_tF"></a>
+                    <a name="//apple_ref/swift/Method/with(usesStoreKit2IfAvailable:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC4with24usesStoreKit2IfAvailableAESb_tF">with(usesStoreKit2IfAvailable:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set <code>usesStoreKit2IfAvailable</code>.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>Support for purchases using StoreKit 2 is currently in an experimental phase.
+We recommend setting this value to <code>false</code> (default) for production apps.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="nv">usesStoreKit2IfAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>usesStoreKit2IfAvailable</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>EXPERIMENTAL. opt in to using StoreKit 2 on devices that support it.
+Purchases will be made using StoreKit 2 under the hood automatically.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L141-L144">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC4with17dangerousSettingsAeA09DangerousG0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/with(dangerousSettings:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC4with17dangerousSettingsAeA09DangerousG0C_tF">with(dangerousSettings:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set <code>dangerousSettings</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="nv">dangerousSettings</span><span class="p">:</span> <span class="kt"><a href="../../Classes/DangerousSettings.html">DangerousSettings</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dangerousSettings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Only use if suggested by RevenueCat support team.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L150-L153">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC4with14networkTimeoutAESd_tF"></a>
+                    <a name="//apple_ref/swift/Method/with(networkTimeout:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC4with14networkTimeoutAESd_tF">with(networkTimeout:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set <code>networkTimeout</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="nv">networkTimeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L156-L159">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC4with16storeKit1TimeoutAESd_tF"></a>
+                    <a name="//apple_ref/swift/Method/with(storeKit1Timeout:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC4with16storeKit1TimeoutAESd_tF">with(storeKit1Timeout:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set <code>storeKit1Timeout</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="nv">storeKit1Timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Builder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L162-L165">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10RevenueCat13ConfigurationC7BuilderC5buildACyF"></a>
+                    <a name="//apple_ref/swift/Method/build()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10RevenueCat13ConfigurationC7BuilderC5buildACyF">build()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generate a <code><a href="../../Classes/Configuration.html">Configuration</a></code> object given the values configured by this builder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">build</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Classes/Configuration.html">Configuration</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/RevenueCat/purchases-ios/tree/4.4.0/Sources/Purchasing/Configuration.swift#L168-L170">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://revenuecat.com" target="_blank" rel="external noopener">RevenueCat</a>. All rights reserved. (Last updated: 2022-05-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
